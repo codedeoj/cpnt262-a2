@@ -1,0 +1,142 @@
+/* General styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #262626;
+
+  margin: auto;
+  
+  width: 50%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fieldset */
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 18px;
+  
+  background-color: #fff4f4;
+
+  box-shadow: inset 1px 1px 15px #f0c8c8;
+
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Legend */
+legend {
+  color: #000;
+
+  font-size: 25px;
+  
+  border-radius: 5px;
+  padding: 0 5px;
+
+  background: #FFF4F4;
+
+  text-align: center;
+}
+
+/* Label */
+label {
+  font-size: 20px;
+
+  width: 100%;
+
+  margin-bottom: 2px;
+}
+
+/* Custom Select */
+select {
+  outline:0;
+
+  border:none;
+  padding: 0 .5em;
+
+  color:#000;
+
+  cursor:pointer;
+
+  font-size: 18px;
+}
+
+.select {
+  position: relative;
+  
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+
+  background: #fff;
+
+  border-radius: 5px;
+}
+
+.select::after {
+  content: '\25BC';
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 0 1em;
+
+  background: #333;
+
+  cursor:pointer;
+  pointer-events:none;
+
+  transition: 0.2s;
+}
+
+.select:hover::after {
+  color: pink;
+}
+
+/* Button */
+button {
+  color: #fff;
+
+  background-color: #000;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin-top: 20px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Output Text */
+#output {
+  color: #EB3B88;
+
+  margin-top: 20px;
+
+  font-size: 20px;
+}
